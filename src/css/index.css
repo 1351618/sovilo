@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  border: none;
+}
+
+.yellow-btn {
+  font-family: "Roboto", Sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1em;
+  color: #ffffff;
+  background-color: #fdb934;
+  border-radius: 33px 33px 33px 33px;
+  padding: 15px 20px 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s;
+}
+.yellow-btn:hover {
+  color: #3e9fbf;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.sect-header {
+  top: 0;
+  width: 100%;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.header {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 104px;
+}
+
+.header__nav {
+  display: flex;
+}
+.header__nav p {
+  display: flex;
+  padding: 0 15px;
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.header__rights {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header__rights-cont {
+  display: flex;
+  flex-direction: column;
+}
+.header__rights-cont a {
+  color: #000000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.main-banner {
+  background-image: url(https://torkretsovilo.ru/wp-content/uploads/2022/11/Rectangle-2-1.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+}
+
+.main__title {
+  height: 630px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.main__title h1 {
+  color: #fdb934;
+  font-family: "Roboto", Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.main__about {
+  height: 400px;
+  background-color: #fdd280;
+}
+
+.main__block-text {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.block-text__cont {
+  max-width: 1200px;
+  width: 100%;
+}
+.block-text__cont h1 {
+  margin: 30px 0px;
+}
+
+.main__nomenclature {
+  background-color: #fdba35;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__item {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.main__item-cont {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.main__item-descript {
+  width: 55%;
+  border: 1px solid rgba(0, 0, 0, 0.3215686275);
+  padding: 10px;
+}
+
+.main__item-foto {
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.3215686275);
+}
+.main__item-foto img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__item-price {
+  width: 15%;
+  border: 1px solid rgba(0, 0, 0, 0.3215686275);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-applic {
+  background-color: #fdd280;
+  background-image: url(https://torkretsovilo.ru/wp-content/uploads/2023/05/vector-1.png);
+  max-width: 1200px;
+  width: 100%;
+  height: 240px;
+  border-radius: 33px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fdb934;
+  padding: 50px;
+}/*# sourceMappingURL=index.css.map */
