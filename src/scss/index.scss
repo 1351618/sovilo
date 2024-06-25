@@ -70,7 +70,7 @@ button {
 }
 .header__nav {
   display: flex;
-  p {
+  a {
     display: flex;
     padding: 0 15px;
     color: #000000;
@@ -78,6 +78,10 @@ button {
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+    transition: color 0.3s;
+    &:hover {
+      color: #3e9fbf;
+    }
   }
 }
 
@@ -172,10 +176,14 @@ button {
   width: 55%;
   border: 1px solid #00000052;
   padding: 10px;
+  ul {
+    margin-top: 10px;
+  }
 }
 .main__item-foto {
   width: 30%;
   border: 1px solid #00000052;
+  overflow: hidden;
   img {
     width: 100%;
     height: auto;
@@ -189,6 +197,61 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main__steps {
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+}
+
+.main__steps-cont {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.steps-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+.step {
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 33px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 33px;
+  display: flex;
+  flex-direction: column;
+  p {
+    color: #fdb934;
+    font-family: "Roboto", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4em;
+  }
+  h2 {
+    margin-top: 20px;
+  }
+  span {
+    margin-top: 10px;
+  }
+  a {
+    color: #fdb934;
+    font-family: "Roboto", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-decoration: underline;
+    margin-top: 20px;
+  }
 }
 .footer {
   display: flex;

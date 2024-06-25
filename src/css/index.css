@@ -79,7 +79,7 @@ button {
 .header__nav {
   display: flex;
 }
-.header__nav p {
+.header__nav a {
   display: flex;
   padding: 0 15px;
   color: #000000;
@@ -87,6 +87,10 @@ button {
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: color 0.3s;
+}
+.header__nav a:hover {
+  color: #3e9fbf;
 }
 
 .header__rights {
@@ -183,10 +187,14 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.3215686275);
   padding: 10px;
 }
+.main__item-descript ul {
+  margin-top: 10px;
+}
 
 .main__item-foto {
   width: 30%;
   border: 1px solid rgba(0, 0, 0, 0.3215686275);
+  overflow: hidden;
 }
 .main__item-foto img {
   width: 100%;
@@ -201,6 +209,62 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main__steps {
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+}
+
+.main__steps-cont {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.steps-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.step {
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 33px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 33px;
+  display: flex;
+  flex-direction: column;
+}
+.step p {
+  color: #fdb934;
+  font-family: "Roboto", Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.step h2 {
+  margin-top: 20px;
+}
+.step span {
+  margin-top: 10px;
+}
+.step a {
+  color: #fdb934;
+  font-family: "Roboto", Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4em;
+  text-decoration: underline;
+  margin-top: 20px;
 }
 
 .footer {
