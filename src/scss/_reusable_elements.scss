@@ -1,0 +1,27 @@
+.yellow-btn {
+  font-family: "Roboto", Sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1em;
+  color: #ffffff;
+  background-color: #fdb934;
+  border-radius: 33px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s;
+  &:hover {
+    color: #3e9fbf;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #3e9fbf;
+}
+
+.bl {
+  color: #3e9fbf;
+}

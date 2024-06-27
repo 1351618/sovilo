@@ -1,41 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: normal;
-}
-
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-button {
-  border: none;
-}
-
-input {
-  outline: none;
-}
-
 .yellow-btn {
   font-family: "Roboto", Sans-serif;
   font-size: 14px;
@@ -43,8 +5,8 @@ input {
   line-height: 1em;
   color: #ffffff;
   background-color: #fdb934;
-  border-radius: 33px 33px 33px 33px;
-  padding: 15px 20px 15px 20px;
+  border-radius: 33px;
+  padding: 15px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,11 +16,14 @@ input {
   color: #3e9fbf;
 }
 
-.body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #3e9fbf;
+}
+
+.bl {
+  color: #3e9fbf;
 }
 
 .sect-header {
@@ -71,17 +36,45 @@ input {
 }
 
 .header {
+  position: relative;
   max-width: 1200px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 104px;
+  min-height: 100px;
+  padding: 4px;
+}
+@media (max-width: 450px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+.header__burg-menu-btn {
+  display: none;
+  height: 46px;
+  width: 46px;
+  background-color: #fdb934;
+}
+.header__burg-menu-btn img {
+  height: 23px;
+  width: 20px;
+}
+@media (max-width: 1024px) {
+  .header__burg-menu-btn {
+    display: block;
+  }
 }
 
 .header__nav {
   display: flex;
+}
+@media (max-width: 1024px) {
+  .header__nav {
+    display: none;
+  }
 }
 .header__nav a {
   display: flex;
@@ -112,6 +105,37 @@ input {
   font-family: "Roboto", Sans-serif;
   font-size: 13px;
   margin-bottom: 10px;
+}
+
+.header__rights-btn {
+  display: block;
+}
+@media (max-width: 1024px) {
+  .header__rights-btn {
+    display: none;
+  }
+}
+
+.header__mobile-menu {
+  background-color: rgba(255, 255, 255, 0.5607843137);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu {
+  background-color: rgba(255, 255, 255, 0.5607843137);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 .main {
@@ -158,6 +182,7 @@ input {
 .block-text__cont {
   max-width: 1200px;
   width: 100%;
+  padding: 10px;
 }
 .block-text__cont h1 {
   margin: 30px 0px;
@@ -183,13 +208,24 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 180px;
+  min-height: 180px;
+}
+@media (max-width: 650px) {
+  .main__item-cont {
+    flex-direction: column;
+    padding: 15px;
+  }
 }
 
 .main__item-descript {
   width: 55%;
   border: 1px solid rgba(0, 0, 0, 0.3215686275);
   padding: 10px;
+}
+@media (max-width: 650px) {
+  .main__item-descript {
+    width: 100%;
+  }
 }
 .main__item-descript ul {
   margin-top: 10px;
@@ -199,6 +235,11 @@ input {
   width: 30%;
   border: 1px solid rgba(0, 0, 0, 0.3215686275);
   overflow: hidden;
+}
+@media (max-width: 650px) {
+  .main__item-foto {
+    width: 100%;
+  }
 }
 .main__item-foto img {
   width: 100%;
@@ -213,6 +254,11 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 650px) {
+  .main__item-price {
+    width: 100%;
+  }
 }
 
 .main__steps {
@@ -235,6 +281,11 @@ input {
   flex-direction: row;
   justify-content: space-between;
   gap: 10px;
+}
+@media (max-width: 970px) {
+  .steps-cont {
+    flex-direction: column;
+  }
 }
 
 .step {
@@ -284,7 +335,7 @@ input {
   background-image: url(https://torkretsovilo.ru/wp-content/uploads/2023/05/vector-1.png);
   max-width: 1200px;
   width: 100%;
-  height: 240px;
+  min-height: 240px;
   border-radius: 33px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -296,6 +347,12 @@ input {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 750px) {
+  .submit-applic {
+    flex-direction: column;
+  }
 }
 
 .submit-applic__left {
@@ -304,6 +361,7 @@ input {
   flex-direction: column;
   justify-content: space-around;
   flex-grow: 1;
+  gap: 20px;
 }
 .submit-applic__left h2 {
   color: #000000;
@@ -324,6 +382,7 @@ input {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  gap: 10px;
 }
 .submit-applic__right button {
   background-color: #ffffff;
@@ -346,6 +405,11 @@ input {
   justify-content: space-between;
   gap: 10px;
 }
+@media (max-width: 550px) {
+  .name-tel {
+    flex-direction: column;
+  }
+}
 .name-tel input {
   min-height: 47px;
   padding: 6px 16px;
@@ -358,4 +422,53 @@ input {
   border-radius: 5px;
   border: none;
   width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }/*# sourceMappingURL=index.css.map */
