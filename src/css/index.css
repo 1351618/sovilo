@@ -186,6 +186,45 @@
 }
 .block-text__cont h1 {
   margin: 30px 0px;
+  text-align: center;
+}
+.block-text__cont p {
+  padding: 10px;
+}
+.block-text__cont ul {
+  padding: 20px;
+}
+.block-text__cont ul li {
+  list-style: disc;
+  padding: 5px;
+}
+.block-text__cont span {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.main__benefit {
+  background-color: #f6ca4d;
+  display: flex;
+  justify-content: center;
+}
+
+.main__benefit-cont {
+  padding: 20px;
+}
+.main__benefit-cont h1 {
+  text-align: center;
+}
+.main__benefit-cont ul {
+  padding: 15px 0;
+}
+.main__benefit-cont ul li {
+  padding: 10px 30px;
+  list-style: inside;
 }
 
 .main__nomenclature {
